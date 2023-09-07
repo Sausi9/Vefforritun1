@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantanir</title>
+  </head>
+  <body>
+    <h1>Pantanir</h1>
+    <a href="#main-content">Beint í efni.</a>
+    <nav>
+      <ul>
+        <li><a href="sidur/matsedill.html">Matseðill</a></li>
+        <li><a href="..index.html">Forsíða</a></li>
+        <li><a href="sidur/um.html">Um okkur</a></li>
+      </ul>
+    </nav>
+    <div id="main-content">
+      <p>
+        Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
+        þú sækir.
+      </p>
+      <form>
+        <fieldset>
+          <legend>Panta borð</legend>
+          <div>
+            <label for="time-select">Hvenær viltu koma?</label>
+            <input
+              type="datetime-local"
+              name="datetime"
+              id="time-select"
+              min="2023-01-01T00:00"
+              max="2023-12-31T00:00"
+            />
+          </div>
+          <div>
+            <label for="number-select">Hversu mörg?</label>
+            <select name="number" id="number-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div>
+            <label for="additional">Viltu taka eitthvað fram?</label>
+            <input type="text" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Panta mat</legend>
+          <div>
+            <label for="food-select"> Réttur</label>
+            <select name="food" id="food-select">
+              <option value="lasagna">Lasagna með fersku salati</option>
+              <option value="quesadilla">
+                Quesadilla með osti og fersku salsa
+              </option>
+              <option value="falafel">
+                Falafel með hummus, pitu og fersku salati
+              </option>
+              <option value="hamborgari">
+                Hamborgari með frönskum kartöflum
+              </option>
+              <option value="pizza">Klassísk pizza</option>
+            </select>
+          </div>
+          <div>
+            <label for="heimilisfang">Heimilisfang</label>
+            <input type="text" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Þínar upplýsingar</legend>
+          <div>
+            <label for="nafn">Nafn</label>
+            <input type="text" required />
+          </div>
+          <div>
+            <label for="netfang"> Netfang </label>
+            <input type="text" required />
+          </div>
+          <div>
+            <label for="sími"> Sími</label>
+            <input type="text" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Samþykkja og panta</legend>
+          <div>
+            <label for="skilmalar">Ég samþykki skilmála Veitingastaðsins</label>
+            <input type="checkbox" required />
+          </div>
+          <div>
+            <input type="button" value="Panta!" />
+          </div>
+        </fieldset>
+      </form>
+      <a href="../index.html"> Aftur á forsíðu</a>
+    </div>
+    <footer>
+      <small>
+        <h3>Opnunartími</h3>
+        <p>Mánudaga til fimmtudaga</p>
+        <p><strong>09:00-18:00</strong></p>
+        <p>Föstudaga</p>
+        <p><strong>10:00-22:00</strong></p>
+        <p>Laugardaga</p>
+        <p><strong>11:00-22:00</strong></p>
+        <p>Sunnudaga</p>
+        <p><strong>lokað</strong></p>
+      </small>
+      <small>
+        <h3>Hér erum við</h3>
+        <p>Veitingastaðurinn ehf.</p>
+        <p>Aðalgata 10</p>
+        <p>100 Reykjavík</p>
+        <p>Sími 333-4567</p>
+        <p>veitingastadur@example.org</p>
+      </small>
+    </footer>
+  </body>
+</html>
