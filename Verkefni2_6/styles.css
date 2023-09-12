@@ -25,3 +25,16 @@ html {
   white-space: nowrap;
   width: 1px;
 }
+.box{
+  border: 2px;
+  border: #ffe7ae;
+  padding-bottom: 2rem;
+  display: flex;
+}
+.box2{
+  border: 2px;
+  border: #ffe7ae;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}

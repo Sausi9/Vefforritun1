@@ -8,13 +8,19 @@
     <meta property="og:title" content="Veitingastaðurinn" />
     <meta property="og:description" content="Við erum Veitingastaðurinn!" />
     <meta property="og:image" content="sidur/myndir/sharing.jpg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Veitingastaðurinn</title>
   </head>
   <body>
     <div>
       <h1>Veitingastaðurinn</h1>
-      <a href="#main-content">Beint í efni.</a>
+      <a href="#main-content" class="sr-only">Beint í efni.</a>
       <nav>
         <ul>
           <li><a href="sidur/matsedill.html">Matseðill</a></li>
@@ -25,21 +31,25 @@
     </div>
     <div id="main-content">
       <h2>Veitingastaðurinn</h2>
-      <p>Á Veitingastaðnum hugsum við vel um þig og gefur þer gott að borða</p>
-      <h3>Opnunartími</h3>
-      <dl>
-        <dt>Mánudaga til fimmtudaga</dt>
-        <dd>09:00 - 18:00</dd>
-        <dt>Föstudaga</dt>
-        <dd>10:00 - 22:00</dd>
-        <dt>Laugardaga</dt>
-        <dd>11:00 - 22:00</dd>
-        <dt>Sunnudaga</dt>
-        <dd>Lokað</dd>
-      </dl>
-      <h3>Um okkur</h3>
-      <p>Við erum hresst fólk sem útbýr mat alla daga nema Sunnudaga</p>
-      <a href="sidur/um.html"> Lesa meira um okkur</a>
+      <p>Á Veitingastaðnum hugsum við vel um þig og gefur þer gott að borða</p><p></p>
+      <div class="box">
+        <h3>Opnunartími</h3>
+        <dl>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>09:00 - 18:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>10:00 - 22:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>11:00 - 22:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
+        </dl>
+      </div>
+      <div class="box">
+        <h3>Um okkur</h3>
+        <p>Við erum hresst fólk sem útbýr mat alla daga nema Sunnudaga</p>
+        <a href="sidur/um.html"> Lesa meira um okkur</a>
+      </div>
       <h3>Matseðill</h3>
       <p>Skoðaðu matseðilinn okkar!</p>
       <a href="sidur/matsedill.html">Skoða matseðilinn</a>
