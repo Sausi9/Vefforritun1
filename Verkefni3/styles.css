@@ -7,6 +7,8 @@
 /* Reiknum stærð á öllum boxum sem border-box */
 html {
   box-sizing: border-box;
+  /* setja inn font */
+  font-family: 'Lora', serif;
 }
 /* og látum erfast á allt */
 *,
@@ -25,23 +27,88 @@ html {
   white-space: nowrap;
   width: 1px;
 }
-.box{
-  border: 2px;
-  border: #ffe7ae;
-  padding-bottom: 2rem;
-  display: flex;
-}
-.box-elements{
-  margin: 1rem;
-  padding: 1rem;
-}
-.header{
+
+
+.header {
   background-color: #2f0505;
   padding: 1rem;
   text-align: center;
-  border-bottom: 8px;
-  margin-bottom: 8px;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  border-color: #ffe7ae;
 }
-.header-content{
+
+.main-content > * {
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: #fff9ee;
   padding: 1rem;
+}
+nav ul{
+  text-align: center;
+}
+nav ul li{
+  display: inline;
+  margin: 0.25rem;
+}
+.box {
+  border-bottom-width: 2px;
+  border-color: #ffe7ae;
+  border-bottom-style: solid;
+  margin: 2rem;
+  display: inline-block;
+}
+
+.box li{
+  display: inline-block;
+  margin-left: 20%;
+  padding: 2rem;
+}
+
+.section-content {
+  display: inline-block;
+  width: 20%;
+  margin-left: 20%;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.section-umokkur{
+  margin-bottom: 10rem;
+}
+.content {
+  margin-bottom: 2rem;
+}
+
+.footer{
+  background-color: #2f0505;
+  border-top: 8px solid #ffe7ae;
+  margin-top: 1rem;
+  text-align: center;
+}
+.footer-content{
+  display: inline-block;
+  text-align: center;
+}
+.footer-content ul {
+  list-style: none;
+}
+.footer-content dt{
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #fff9ee;
+}
+.footer-content a{
+  color: #fff1cf;
+}
+.footer-content h2{
+  color: #fff9ee;
+}
+.footer-content dd{
+  color: #fff1cf;
+}
+.footer-content ul li{
+  color: #fff1cf;
 }
