@@ -31,10 +31,17 @@ html {
   padding-bottom: 2rem;
   display: flex;
 }
-.box2{
-  border: 2px;
-  border: #ffe7ae;
-  padding-bottom: 0.5rem;
-  display: flex;
-  justify-content: center;
+.box-elements{
+  margin: 1rem;
+  padding: 1rem;
+}
+.header{
+  background-color: #2f0505;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 8px;
+  margin-bottom: 8px;
+}
+.header-content{
+  padding: 1rem;
 }
