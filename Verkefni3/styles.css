@@ -36,7 +36,9 @@ html {
   border-bottom-width: 8px;
   border-bottom-style: solid;
   border-color: #ffe7ae;
+  color: #fff1cf;
 }
+
 
 .main-content > * {
   margin-bottom: 1rem;
@@ -59,6 +61,7 @@ nav ul li{
   border-bottom-style: solid;
   margin: 2rem;
   display: inline-block;
+  margin-left: 20%;
 }
 
 .box li{
@@ -73,6 +76,18 @@ nav ul li{
   margin-left: 20%;
   margin-bottom: 1rem;
   list-style: none;
+}
+.section-content dl dt{
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.section-content a{
+  font-weight: bold;
+  color: black;
+}
+.section-content ul li{
+  margin: 1rem;
+  display: inline-block;
 }
 
 .section-umokkur{
