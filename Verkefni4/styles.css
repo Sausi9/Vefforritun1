@@ -153,9 +153,16 @@ img {
 /* Box! */
 
 .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing);
+  gap: var(--spacing);
 }
 
 .boxes .box {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 /** Og fleiri selectorar... **/
