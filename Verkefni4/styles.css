@@ -69,9 +69,7 @@ button {
 h1,
 h2,
 h3 {
-  font-size: var(--font-base-size);
   font-family: var(--font-family-heading);
-
 }
 
 a {
@@ -100,6 +98,7 @@ img {
   /** Þessi selector er utanum allt og ætti að stýra plássi á milli efnis **/
   display: flex;
   flex-direction: column;
+  gap: var(--spacing);
 }
 
 /** Haus **/
@@ -110,6 +109,7 @@ img {
   background-color: var(--color-dark);
   width: 100%;
   gap: var(--spacing);
+  border-bottom: var(--border-large) solid var(--color-gold) ;
 }
 
 .header header {
@@ -139,35 +139,104 @@ img {
 /** Meginmál **/
 
 .main {
+  display: flex;
+  flex-direction: column;
 }
 
+.main section h2{
+  padding-left: var(--spacing);
+  padding-bottom: var(--spacing);
+}
+.main section p{
+  padding-bottom: var(--spacing);
+}
 /** Fótur **/
 
 .footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
+  border-top: var(--border-large) solid var(--color-gold);
 }
 
 .footer ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing);
 }
-
+.footer dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer h2{
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing);
+}
 /* Box! */
 
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  padding: var(--spacing);
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
   gap: var(--spacing);
+  padding-bottom: calc(2*var(--spacing));
 }
 
 .boxes .box {
   display: flex;
   flex-direction: column;
-  
+  width:calc(50% - var(--spacing)*0.5);
+  background-color: var(--color-gold-light);
+  justify-content: space-between;
+  padding: calc(0.5*var(--spacing));
 }
 
 /** Og fleiri selectorar... **/
 
+.boxes .box .content {
+  flex: 1;
+}
+
+.boxes .box .content p{
+  padding-top: var(--spacing);
+}
+
+.boxes .box h3{
+  border-bottom: solid;
+}
+
+.boxes .box a{
+  font-weight: bold;
+  padding-top: var(--spacing);
+}
+
+.popular h2{
+  padding: var(--spacing);
+}
+
+.linkar{
+  padding-left: var(--spacing);
+}
+
+.content img{
+  margin-top: var(--spacing);
+}
 /* Opnunartími */
+dt {
+  font-family: var(--font-family-heading);
+  margin-top: var(--spacing);
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: var(--spacing);
+}
 
 /**
 Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
@@ -175,12 +244,53 @@ Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
 
 /* Matseðill */
 
+.main table tbody tr:nth-child(2n + 1) {
+  background-color: var(--color-gold);
+}
+.main table{
+  border-spacing: 0;
+  padding: var(--spacing);
+}
+.main table tbody tr td{
+  padding: calc(0.25*var(--spacing));
+}
+.main table th {
+  padding: calc(0.5*var(--spacing));
+}
 /**
 Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
 **/
 
 /* Pöntunarform */
+fieldset {
+  margin-bottom: 1rem;
+  border: var(--border-small) solid var(--color-gold);
+}
 
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset div {
+  margin-bottom: var(--spacing);
+}
+
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  padding: calc(0.5*var(--spacing));
+}
+
+fieldset input[type='checkbox'] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+form button {
+  padding: 0.25rem;
+  border-radius: 6px;
+}
 /**
 Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
 **/
