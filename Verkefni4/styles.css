@@ -137,7 +137,6 @@ img {
 }
 
 /** Meginmál **/
-
 .main {
   display: flex;
   flex-direction: column;
@@ -200,7 +199,10 @@ img {
 /** Og fleiri selectorar... **/
 
 .boxes .box .content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  justify-content: center;
 }
 
 .boxes .box .content p{
@@ -208,7 +210,7 @@ img {
 }
 
 .boxes .box h3{
-  border-bottom: solid;
+  border-bottom: var(--border-small) solid var(--color-dark);
 }
 
 .boxes .box a{
@@ -238,6 +240,14 @@ dd {
   margin-bottom: var(--spacing);
 }
 
+
+body .main .popular .populardish{
+  padding-bottom: 0;
+  padding-top: calc(2*var(--spacing));
+}
+body .main .popular .price {
+  padding-top:0;
+}
 /**
 Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
 **/
