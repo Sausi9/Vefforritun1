@@ -192,7 +192,6 @@ img {
   flex-direction: column;
   width:calc(50% - var(--spacing)*0.5);
   background-color: var(--color-gold-light);
-  justify-content: space-between;
   padding: calc(0.5*var(--spacing));
 }
 
@@ -207,6 +206,7 @@ img {
 
 .boxes .box .content p{
   padding-top: var(--spacing);
+  flex: 0.9;
 }
 
 .boxes .box h3{
@@ -227,7 +227,18 @@ img {
 }
 
 .content img{
-  margin-top: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+  object-position:75% 25% ;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 450px;
+}
+.boxes .box .content .description{
+  padding-bottom: 0;
+  padding-top: 0;
 }
 /* Opnunartími */
 dt {
@@ -248,6 +259,13 @@ body .main .popular .populardish{
 body .main .popular .price {
   padding-top:0;
 }
+
+.saga p{
+  padding-bottom: var(--spacing);
+  padding-left: var(--spacing);
+}
+
+
 /**
 Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
 **/
@@ -262,7 +280,7 @@ Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
   padding: var(--spacing);
 }
 .main table tbody tr td{
-  padding: calc(0.25*var(--spacing));
+  padding: calc(0.50*var(--spacing));
 }
 .main table th {
   padding: calc(0.5*var(--spacing));
@@ -273,8 +291,33 @@ Hér eru skilgreiningar sem endurnýta má úr v3, með takmörkunum.
 
 /* Pöntunarform */
 fieldset {
-  margin-bottom: 1rem;
-  border: var(--border-small) solid var(--color-gold);
+  margin-bottom: var(--spacing);
+}
+.boxes .box div{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+#when,
+#size,
+#special,
+#food1, 
+#food2, 
+#food3, 
+#food4, 
+#food5,
+#address,
+#name,
+#email,
+#phone{
+  max-width: fit-content;
+}
+
+.box button{
+  padding: calc(0.5*var(--spacing));
 }
 
 fieldset legend {
