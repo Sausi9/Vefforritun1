@@ -142,7 +142,6 @@ img {
   display: grid;
   gap: var(--spacing);
   min-height: 100vh;
-  grid-template-columns: min-content;
 }
 
 /* Haus */
@@ -188,7 +187,7 @@ img {
 /** Útfæra valmynd með grid **/
 
 /** Meginmál **/
-
+/*
 .main {
   flex: 1;
   display: flex;
@@ -203,8 +202,18 @@ img {
 
 /** Útfæra meginmál með grid **/
 
-/** Fótur **/
+.main {
+  display: grid;
+  gap: var(--spacing);
+  margin: 0 auto;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+  width: 100%;
+  max-width: var(--max-width);
+}
 
+/** Fótur **/
+/*
 .footer {
   display: flex;
   justify-content: center;
@@ -225,8 +234,25 @@ img {
 
 /** Útfæra fót með grid **/
 
-/* Box! */
+.footer {
+  display: grid;
+  justify-items: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  border-top: var(--border-large) solid var(--color-gold);
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
+  text-align: center;
+  grid-template-columns: 11fr 4fr 3fr
+}
 
+
+.footer ul {
+  grid-column: span 2;
+  list-style: none;
+}
+/* Box! */
+/*
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -275,6 +301,50 @@ img {
 }
 
 /** Útfæra box með grid **/
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: calc(var(--spacing) * 2) var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2);
+  width: 100%;
+}
+
+.boxes .box {
+  display: grid;
+  gap: var(--spacing);
+  padding: calc(var(--spacing) * 0.5);
+  width: calc(50% - var(--spacing) * 0.5);
+  min-height: 100px;
+
+  color: var(--color-dark);
+  background-color: var(--color-gold-light);
+  border-radius: 5px;
+}
+
+.boxes .box .title {
+  margin-bottom: calc(var(--spacing) * 0.5);
+  border-bottom: var(--border-small) solid var(--color-dark);
+}
+
+.boxes .box .content {
+  flex: 1;
+}
+
+.boxes .box img {
+
+  max-height: 400px;
+
+  object-fit: cover;
+  object-position: top center;
+}
+
+.boxes .box .link {
+  margin-top: calc(var(--spacing) * 0.5);
+
+  font-weight: bold;
+}
+
 
 /* Opnunartími */
 
