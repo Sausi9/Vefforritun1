@@ -119,6 +119,7 @@ img {
   text-align: center;
   padding: calc(0.5*var(--spacing));
   border-radius: var(--border-radius);
+  max-height: 50px;
 }
 
 /** Útfæra takka + kvikun **/
@@ -312,8 +313,9 @@ img {
 
 /** Útfæra box með grid **/
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-template-rows:minmax(200px,auto);
   gap: calc(var(--spacing) * 2) var(--spacing);
 
   margin-bottom: calc(var(--spacing) * 2);
@@ -321,15 +323,13 @@ img {
 }
 
 .boxes .box {
-  display: flex;
-  flex-direction: column;
-
+  display: grid;
+  grid-column: span 6;
+  grid-template-rows: min-content;
   gap: var(--spacing);
 
   padding: calc(var(--spacing) * 0.5);
-  width: calc(50% - var(--spacing) * 0.5);
   min-height: 100px;
-
   color: var(--color-dark);
   background-color: var(--color-gold-light);
   border-radius: 5px;
