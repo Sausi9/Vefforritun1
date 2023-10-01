@@ -120,13 +120,26 @@ img {
   padding: calc(0.5*var(--spacing));
   border-radius: var(--border-radius);
   max-height: 50px;
+  transition: all 0.5s ease-in-out;
 }
 
 /** Útfæra takka + kvikun **/
 
 /* Kvikun */
+.button:hover{
+  background-color:var(--color-gold);
+  color: #2f0505;
+}
 
 /** Útfæra kvikun á efni þegar síða opnuð **/
+@keyframes initiate {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
 /* Layout */
 
@@ -143,6 +156,7 @@ img {
   display: grid;
   gap: var(--spacing);
   min-height: 100vh;
+  animation: initiate 0.5s linear;
 }
 
 /* Haus */
@@ -332,14 +346,18 @@ img {
 .boxes .box {
   display: grid;
   grid-column: span 12;
-  grid-template-rows: min-content;
+  grid-template-rows: 1fr;
   gap: var(--spacing);
-
   padding: calc(var(--spacing) * 0.5);
   min-height: 100px;
   color: var(--color-dark);
   background-color: var(--color-gold-light);
-  border-radius: 5px;
+  border-radius: 5px; 
+  align-items: end;
+}
+
+.boxes .box .content{
+  align-self: start;
 }
 
 
@@ -349,7 +367,6 @@ img {
     grid-column: span 6;
     grid-template-rows: min-content;
     gap: var(--spacing);
-  
     padding: calc(var(--spacing) * 0.5);
     min-height: 100px;
     color: var(--color-dark);
@@ -379,9 +396,11 @@ img {
   border-bottom: var(--border-small) solid var(--color-dark);
 }
 
+/*
 .boxes .box .content {
   flex: 1;
 }
+*/
 
 .boxes .box img {
 
