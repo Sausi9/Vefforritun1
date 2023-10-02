@@ -263,12 +263,14 @@ img {
   grid-template-columns: repeat(var(--columns),1fr);
   offset: var(--offset);
 }
+
 .footer-column1{
   grid-column-end: span 12;
 }
 .footer-column2{
   grid-column-end: span 12;
 }
+
 @media (min-width: 1000px){
   .footer-column1{
     grid-column-start: 4;
@@ -284,6 +286,7 @@ img {
   grid-column: span 2;
   list-style: none;
 }
+
 /* Box! */
 /*
 .boxes {
@@ -358,6 +361,31 @@ img {
 
 .boxes .box .content{
   align-self: start;
+}
+
+#pantabord,#yourdata{
+  align-content: start;
+}
+
+
+#when,
+#size,
+#special,
+#pantabord,
+#food1,
+#food2,
+#food3,
+#food4,
+#food5,
+#address,
+#name,
+#email,
+#phone{
+  width: 100%;
+}
+
+#panta{
+  align-items: start;
 }
 
 
